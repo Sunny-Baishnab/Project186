@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = 'https://aframe.io/releases/1.0.4/aframe.min.js'></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color = 'black'></a-sky>
+            <a-camera position = '0 10 10' rotation = '0 90 0'></a-camera>
+            <a-entity position = '0 40 -30' spe-particles = '
+            color:orange,red,yellow,green,lightgreen,lightblue,blue, purple,violet,gray,pink; 
+            distribution:sphere;
+            randomize-velocity:true;
+            radius:3;
+            particle-count:1000;
+            velocity:3;
+            velocity-spread:17;
+            drag:1;
+            max-age:2;
+            duration:-1;
+            blending:additive;
+            active-multiplier:1000;
+            size:1,2,3,2'></a-entity>
+
+            <a-entity position = '-20 40 -30' spe-particles = '
+            color:orange,red,yellow,green,lightgreen,lightblue,blue, purple,violet,gray,pink; 
+            distribution:box;
+            randomize-velocity:true;
+            radius:2;
+            particle-count:1000;
+            velocity:3;
+            velocity-spread:17;
+            drag:1;
+            max-age:2;
+            duration:-1;
+            blending:additive;
+            active-multiplier:1000;
+            size:1,2,3,2'></a-entity>
+
+            <a-entity position = '-20 40 -30' spe-particles = '
+            color:orange,red,yellow,pink; 
+            distribution:sphere;
+            randomize-velocity:true;
+            radius:1;
+            particle-count:1000;
+            velocity:3;
+            velocity-spread:32;
+            drag:1;
+            max-age:2;
+            duration:-1;
+            blending:additive;
+            active-multiplier:1000;
+            size:1,3,1,4'></a-entity>
+
+            <a-entity position = '20 20 -30' spe-particles = '
+            color:green,lightgreen; 
+            distribution:sphere;
+            randomize-velocity:true;
+            radius:1;
+            particle-count:1000;
+            velocity:3;
+            velocity-spread:20;
+            drag:1;
+            max-age:2;
+            duration:-1;
+            blending:custom;
+            active-multiplier:1000;
+            size:1,2,1,2'></a-entity>
+
+            <a-entity position = '-10 15 -30' spe-particles = '
+            color:orange,red,yellow,pink; 
+            distribution:disc;
+            randomize-velocity:true;
+            radius:1;
+            particle-count:1000;
+            velocity:3;
+            velocity-spread:7;
+            drag:1;
+            max-age:2;
+            duration:-1;
+            blending:additive;
+            active-multiplier:1000;
+            size:1,1,1,1'></a-entity>
+
+            <a-plane position = '0 0 0' width = '200' height = '200' rotation = '-90 0 0' src = 'https://upload.wikimedia.org/wikipedia/commons/8/84/Diya_deepak_Diwali_rangoli_in_goa.JPG'></a-plane>
+            <a-plane position = '-100 50 0' width = '200' height = '100' rotation = '0 90 0' src = 'https://images.news18.com/ibnlive/uploads/2021/11/1600-x-1600-2-16359137923x2.png?impolicy=website&width=510&height=356'></a-plane>
+        </a-scene>
+    </body>
+</html>
